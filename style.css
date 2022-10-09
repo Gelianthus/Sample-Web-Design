@@ -1,0 +1,39 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Colors */
+
+    --black: hsla(0, 0%, 0%, 1);
+    --almost-black: hsla(0, 0%, 20%, 1);
+    --gray: hsla(0, 0%, 40%, 1);
+    --almost-gray: hsla(0, 0%, 61%, 1);
+    --white: hsla(0, 100%, 100%, 1);
+    --almost-white: hsla(0, 0%, 89%, 1);
+
+    /* Sizes */
+
+    --size-100: 0.5rem;
+    --size-200: 1rem;
+    --size-300: 1.5rem;
+    --size-400: 2rem;
+    --size-500: 2.5rem;
+    --size-600: 3rem;
+    --size-700: 3.5rem;
+    --size-800: 4rem;
+    --size-900: 4.5rem;
+    --size-1000: 5rem;
+
+}
+
+.clickable-text {
+    font-size: var(--size-300);
+}
+
+.text-block {
+    font-size: var(--size-200);
+}
