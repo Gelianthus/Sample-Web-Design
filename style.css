@@ -32,8 +32,39 @@
 
 .clickable-text {
     font-size: var(--size-300);
+    color: var(--almost-black);
+    padding: var(--size-100) var(--size-200);
+    text-align: center;
+    background-color: var(--white);
+}
+
+.primary-heading-text {
+    font-size: var(--size-600);
+    color: var(--black);
+}
+
+.secondary-heading-text {
+    font-size: var(--size-400);
+    color: var(--almost-black);
 }
 
 .text-block {
     font-size: var(--size-200);
+    color: var(--gray);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.large-container-padding {
+    padding: var(--size-200) var(--size-400);
 }
