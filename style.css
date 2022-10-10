@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -28,28 +29,54 @@
     --size-900: 4.5rem;
     --size-1000: 5rem;
 
+
+    /* Font Weights*/
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
 }
 
-.clickable-text {
+/* Header Element Styles */
+
+.clickable-header-text-primary {
     font-size: var(--size-300);
+    font-weight: var(--fw-medium);
     color: var(--almost-black);
     padding: var(--size-100) var(--size-200);
     text-align: center;
     background-color: var(--white);
+    display: inline-block;
+}
+
+.clickable-header-text-secondary {
+    font-size: var(--size-300);
+    font-weight: var(--fw-light);
+    color: var(--almost-black);
+    padding: var(--size-100) var(--size-200);
+    text-align: center;
+    background-color: var(--white);
+    display: inline-block;
 }
 
 .primary-heading-text {
     font-size: var(--size-600);
+    font-weight: var(--fw-bold);
     color: var(--black);
 }
 
 .secondary-heading-text {
     font-size: var(--size-400);
+    font-weight: var(--fw-semi-bold);
     color: var(--almost-black);
 }
 
 .text-block {
     font-size: var(--size-200);
+    font-weight: var(--fw-regular);
     color: var(--gray);
 }
 
