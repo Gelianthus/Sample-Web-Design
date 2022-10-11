@@ -14,7 +14,7 @@
     --gray: hsla(0, 0%, 40%, 1);
     --almost-gray: hsla(0, 0%, 61%, 1);
     --white: hsla(0, 100%, 100%, 1);
-    --almost-white: hsla(0, 0%, 89%, 1);
+    --almost-white: whitesmoke;
 
     /* Sizes */
 
@@ -40,7 +40,39 @@
 
 }
 
-/* Header Element Styles */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+header {
+    justify-content: space-between
+}
+
+.menu-button {
+    position: absolute;
+    background: none;
+    border: none;
+    display: none;
+}
+
+
+.header-ul {
+   
+}
+
+.nested-ul {
+   overflow: hidden;
+   height: 0;
+   background-color: whitesmoke;
+}
 
 .clickable-header-text-primary {
     font-size: var(--size-300);
@@ -48,8 +80,9 @@
     color: var(--almost-black);
     padding: var(--size-100) var(--size-200);
     text-align: center;
-    background-color: var(--white);
     display: inline-block;
+    border: none;
+    background: none;
 }
 
 .clickable-header-text-secondary {
@@ -58,8 +91,8 @@
     color: var(--almost-black);
     padding: var(--size-100) var(--size-200);
     text-align: center;
-    background-color: var(--white);
     display: inline-block;
+    background: none;
 }
 
 .primary-heading-text {
