@@ -52,6 +52,31 @@ img {
     vertical-align: middle;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svg-icon {
+    aspect-ratio: 1 / 1;
+    width: var(--size-300);
+    vertical-align: middle;
+    margin-right: var(--size-100);
+}
+
+.visibility-display {
+    display: none;
+}
+
+/* Header Styles */ 
+
 header {
     justify-content: space-between;
     position: fixed;
@@ -60,6 +85,10 @@ header {
     left: 0;
     background-color: var(--white);
 }
+
+.header-ul {
+    gap: var(--size-400);
+ }
 
 .menu-button {
     position: absolute;
@@ -77,17 +106,11 @@ header {
 
 }
 
-
-.header-ul {
-   gap: var(--size-400);
-}
-
-.nested-ul {
-    display: none;
+.project-ul {
     position: absolute;
     background-color: whitesmoke;
     border-radius: var(--size-100);
-    transform: translateX(10%);
+   transform: translateX(var(--size-600));
 }
 
 .clickable-header-text-primary {
@@ -108,12 +131,7 @@ header {
     fill: var(--black);
 }
 
-.svg-icon {
-    aspect-ratio: 1 / 1;
-    width: var(--size-300);
-    vertical-align: middle;
-    margin-right: var(--size-100);
-}
+
 
 .clickable-header-text-secondary {
     font-size: var(--size-300);
@@ -127,6 +145,21 @@ header {
 
 .clickable-header-text-secondary:hover, .clickable-header-text-secondary:active {
     color: var(--black);
+}
+
+/* Main Element Styles */
+
+.intro-section {
+    padding: var(--size-1000) 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    gap: var(--size-200);
+}
+
+.intro-content {
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .primary-heading-text {
@@ -151,33 +184,8 @@ header {
     margin-top: var(--size-200);
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .large-container-padding {
     padding: var(--size-200) var(--size-400);
-}
-
-.intro-section {
-    padding: var(--size-1000) 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1;
-    gap: var(--size-200);
-}
-
-.intro-content {
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .hero-container {
@@ -194,6 +202,8 @@ header {
     object-position: right top;
     display: block;
 }
+
+/* Footer Element Styles */
 
 .social-link {
     font-size: var(--size-200);
