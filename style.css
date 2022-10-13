@@ -19,7 +19,8 @@
 
     /* Sizes */
 
-    --size-100: 0.5rem;
+    --size-100: 0.50rem;
+    --size-150: 0.75rem;
     --size-200: 1rem;
     --size-300: 1.5rem;
     --size-400: 2rem;
@@ -51,6 +52,12 @@ a {
 
 img {
     vertical-align: middle;
+}
+
+input {
+    padding: 2px var(--size-100);
+    border-radius: var(--size-100);
+    margin: var(--size-100);
 }
 
 .flex-row {
@@ -226,6 +233,7 @@ header {
     padding: var(--size-100) var(--size-200);
     border-radius: var(--size-100);
     background-color: var(--almost-black);
+    margin: var(--size-200) 0;
 }
 
 .project-list {
@@ -260,24 +268,152 @@ header {
     padding: var(--size-100);
 }
 
+/* About Us Section */
+
+.about-us-section {
+    margin-bottom: var(--size-1000);
+}
+
+.section-heading {
+    font-weight: 400;
+    font-size: var(--size-400);
+    letter-spacing: var(--size-100);
+    color: var(--almost-white);
+    padding: var(--size-100) var(--size-200);
+    border-radius: var(--size-100);
+    background-color: var(--almost-black);
+    margin: var(--size-300) 0;
+}
+
+.sub-sections-container {
+
+}
+
+.sub-section {
+
+}
+
+.sub-section-heading {
+    font-size: var(--size-300);
+    padding: var(--size-100) var(--size-100);
+    border-radius: var(--size-100);
+    font-weight: 600;
+    letter-spacing: var(--size-100);
+    background-color: var(--almost-gray);
+    margin: var(--size-100) 0;
+    color: var(--almost-white);
+    text-align: center;
+}
+
+.about-us-par {
+    font-size: var(--size-200);
+    color: var(--gray);
+    margin: var(--size-150) 0;
+    line-height: 2;
+}
+
+.disclaimer {
+    font-size: var(--size-150);
+    color: var(--almost-gray);
+}
+
+.answer-par {
+    font-size: var(--size-200);
+    color: var(--gray);
+    padding: var(--size-200) var(--size-100);
+    width: fit-content;
+    background-color: var(--almost-white);
+    border-radius: var(--size-100);
+}
+
+/* Place Commission Section */
+
+.place-commission-section {
+    margin-bottom: var(--size-1000);
+}
+
+.commission-form {
+    padding: var(--size-600);
+    background-color: var(--almost-white);
+    border-radius: var(--size-100);
+}
+
+.instruction {
+    display: block;
+    min-width: 100%;
+    resize: none;
+    padding: var(--size-100);
+    border-radius: var(--size-100);
+    border: none;
+}
+
+.form-section-label {
+    font-size: var(--size-300);
+    font-weight: 400;
+}
+
+.input-label {
+    font-size: var(--size-200);
+    color: var(--almost-black);
+    margin-right: var(--size-200);
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.commission-fieldset {
+    padding: var(--size-200);
+    border-radius: var(--size-100);
+    margin: var(--size-150) 0;
+    background-color: var(--white);
+    border: none;
+}
+
+.submit-commission {
+    display: block;
+    margin-inline: auto;
+    width: fit-content;
+    padding: var(--size-150) var(--size-600);
+    background: var(--gray); 
+    border-radius: var(--size-100);
+    font-size: var(--size-300);
+    font-weight: 500;
+    color: var(--almost-white);
+    border: none;
+    cursor: pointer;
+}
+
+.submit-commission:active {
+    background-color: var(--black);
+    color: var(--almost-white);
+}
+
+
+
 /* Footer Element Styles */
+
+footer {
+    background-color: var(--almost-black);
+}
 
 .social-link {
     font-size: var(--size-300);
     font-weight: var(--fw-medium);
-    color: var(--gray);
+    color: var(--white);
+    fill: var(--white);
     padding: var(--size-100) var(--size-200);
     text-align: center;
     display: inline-block;
     border: none;
     background: none;
     cursor: pointer;
-    fill: var(--gray);
 }
 
 .social-link:hover, .social-link:active {
-    color: var(--black);
-    fill: var(--black);
+    color: var(--almost-gray);
+    fill: var(--almost-gray);
 }
 
 .social-icon {
