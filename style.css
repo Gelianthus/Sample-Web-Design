@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -86,6 +87,10 @@ header {
     background-color: var(--white);
 }
 
+.logo {
+    aspect-ratio: 1 / 2;
+}
+
 .header-ul {
     gap: var(--size-400);
  }
@@ -110,7 +115,7 @@ header {
     position: absolute;
     background-color: whitesmoke;
     border-radius: var(--size-100);
-   transform: translateX(var(--size-600));
+    transform: translateX(25%);
 }
 
 .clickable-header-text-primary {
@@ -147,7 +152,7 @@ header {
     color: var(--black);
 }
 
-/* Main Element Styles */
+/* Page Introduction Section */
 
 .intro-section {
     padding: var(--size-1000) 0;
@@ -181,7 +186,7 @@ header {
     font-weight: var(--fw-regular);
     color: var(--gray);
     line-height: 2;
-    margin-top: var(--size-200);
+    margin-top: var(--size-300);
 }
 
 .large-container-padding {
@@ -201,6 +206,53 @@ header {
     object-fit: cover;
     object-position: right top;
     display: block;
+}
+
+/* Project Section */
+
+.project-section {
+
+}
+
+.project-type-container {
+    width: 100%;
+    margin: var(--size-1000) 0;
+}
+
+.project-type-heading {
+    font-weight: 400;
+    font-size: var(--size-400);
+    letter-spacing: var(--size-100);
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--size-300);
+}
+
+.project-list > li {
+    margin: var(--size-200) 0;
+}
+
+.card-link {
+    font-size: var(--size-200);
+    color: var(--gray);
+    text-align: center;
+
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--almost-white);
+    display: block;
+    margin-inline: auto;
+    object-fit: cover;
+}
+
+.card-title {
+    padding: var(--size-100);
 }
 
 /* Footer Element Styles */
@@ -228,4 +280,8 @@ header {
     width: var(--size-200);
     vertical-align: middle;
     margin-right: var(--size-100);
+}
+
+nav > ul {
+    justify-content: flex-end;
 }
