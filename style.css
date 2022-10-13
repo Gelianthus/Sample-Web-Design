@@ -204,7 +204,6 @@ header {
 
 .hero {
     object-fit: cover;
-    object-position: right top;
     display: block;
 }
 
@@ -223,6 +222,10 @@ header {
     font-weight: 400;
     font-size: var(--size-400);
     letter-spacing: var(--size-100);
+    color: var(--almost-white);
+    padding: var(--size-100) var(--size-200);
+    border-radius: var(--size-100);
+    background-color: var(--almost-black);
 }
 
 .project-list {
@@ -249,6 +252,8 @@ header {
     display: block;
     margin-inline: auto;
     object-fit: cover;
+    border-radius: var(--size-100);
+    overflow: hidden;
 }
 
 .card-title {
@@ -258,7 +263,7 @@ header {
 /* Footer Element Styles */
 
 .social-link {
-    font-size: var(--size-200);
+    font-size: var(--size-300);
     font-weight: var(--fw-medium);
     color: var(--gray);
     padding: var(--size-100) var(--size-200);
@@ -277,7 +282,7 @@ header {
 
 .social-icon {
     aspect-ratio: 1 / 1;
-    width: var(--size-200);
+    width: var(--size-300);
     vertical-align: middle;
     margin-right: var(--size-100);
 }
