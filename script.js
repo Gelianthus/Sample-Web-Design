@@ -19,6 +19,9 @@ const goalsButton = document.getElementById("goalsButton");
 const policiesButton = document.getElementById("policiesButton");
 const faqButton = document.getElementById("faqButton");
 
+const headerUL = document.getElementById("headerUL");
+const menuButton = document.getElementById("menuButton");
+
 // Scripts -------------------------------------------------------------------------------
 
 
@@ -31,7 +34,7 @@ shortStories.style.scrollMarginTop = headerElem.clientHeight + "px";
 aboutUs.style.scrollMarginTop = headerElem.clientHeight + "px";
 placeCommission.style.scrollMarginTop = headerElem.clientHeight + "px";
 
-mainElem.style.paddingTop = headerElem.clientHeight + "px";
+mainElem.style.marginTop = headerElem.clientHeight + "px";
 
 // Expand Explore Button
 
@@ -79,4 +82,19 @@ faqButton.addEventListener("click", function() {
     goalsButton.setAttribute("data-active", "false");
     policiesButton.setAttribute("data-active", "false");
     faqButton.setAttribute("data-active", "true");
+})
+
+// Sidebar 
+
+menuButton.addEventListener("click", function() {
+    const expanded = headerUL.getAttribute("data-expanded");
+    if(expanded === "false") {
+        headerUL.setAttribute("data-expanded", "true");
+    } else {
+        headerUL.setAttribute("data-expanded", "false");
+    }
+})
+
+headerUL.addEventListener("mouseleave", function(){
+    headerUL.setAttribute("data-expanded", "false");
 })
