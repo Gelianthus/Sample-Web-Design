@@ -194,8 +194,8 @@ header {
     font-size: var(--size-200);
     font-weight: var(--fw-regular);
     color: var(--gray);
-    line-height: 2;
-    margin-top: var(--size-300);
+    line-height: 1.8;
+    margin-top: var(--size-150);
 }
 
 .large-container-padding {
@@ -570,4 +570,174 @@ nav > ul {
         color: var(--almost-gray);
     }
 
+    .intro-section {
+        padding: var(--size-200) 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-200);
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--size-200);
+    }
+    
+    .project-list > li {
+        margin: 0;
+    }
+    
+    .card-link {
+        font-size: var(--size-200);
+        color: var(--gray);
+        text-align: center;
+    
+    }
+    
+    .card-image {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: var(--almost-white);
+        display: block;
+        margin-inline: auto;
+        object-fit: cover;
+        border-radius: var(--size-100);
+        overflow: hidden;
+    }
+
+    .hero {
+        object-fit: cover;
+        display: block;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        max-height: 60vh;
+    }
+
+    .circle-icon {
+        aspect-ratio: 1 / 1;
+        width: var(--size-250);
+        vertical-align: middle;
+    }
+
+    .input-label {
+        display: block;
+    }
+
+    .social-link {
+        font-size: var(--size-200);
+        font-weight: var(--fw-regular);
+        color: var(--white);
+        fill: var(--white);
+        padding: var(--size-100);
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .social-icon {
+        aspect-ratio: 1 / 1;
+        width: var(--size-200);
+        vertical-align: middle;
+        margin-right: 0.25rem;
+    }
+
+    .submit-commission {
+        padding: var(--size-150) var(--size-400);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .social-link {
+        font-size: 0;
+        font-weight: var(--fw-regular);
+        color: var(--white);
+        fill: var(--white);
+        padding: var(--size-100);
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .social-icon {
+        aspect-ratio: 1 / 1;
+        width: var(--size-200);
+        vertical-align: middle;
+        margin-right: 0.25rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .large-container-padding {
+        padding: var(--size-150) var(--size-250);
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-200);
+    }
+
+    .circle-icon {
+        aspect-ratio: 1 / 1;
+        width: var(--size-200);
+        vertical-align: middle;
+    }
+
+    .place-commission-section {
+        margin-bottom: var(--size-800);
+    }
+    
+    .commission-form {
+        padding: var(--size-300);
+        background-color: var(--almost-white);
+        border-radius: var(--size-100);
+    }
+
+    .commission-fieldset {
+        padding: var(--size-200);
+        border-radius: var(--size-100);
+        margin: var(--size-150) 0;
+        background-color: var(--white);
+        border: none;
+    }
+    
+    .submit-commission {
+        display: block;
+        margin-inline: auto;
+        width: fit-content;
+        padding: var(--size-150) var(--size-400);
+        background: var(--gray); 
+        border-radius: var(--size-100);
+        font-size: var(--size-300);
+        font-weight: var(--fw-medium);
+        color: var(--almost-white);
+        border: none;
+        cursor: pointer;
+        margin-top: var(--size-350);
+    }
+
+    .social-link {
+        font-size: 0;
+        font-weight: var(--fw-regular);
+        color: var(--white);
+        fill: var(--white);
+        padding: var(--size-100);
+        text-align: center;
+        display: inline-block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .social-icon {
+        aspect-ratio: 1 / 1;
+        width: var(--size-200);
+        vertical-align: middle;
+        margin-right: 0.25rem;
+    }
 }

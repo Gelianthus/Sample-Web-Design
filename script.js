@@ -27,12 +27,12 @@ const menuButton = document.getElementById("menuButton");
 
 // Calculated Sizing
 
-poems.style.scrollMarginTop = headerElem.clientHeight + "px";
-articles.style.scrollMarginTop = headerElem.clientHeight + "px";
-shortStories.style.scrollMarginTop = headerElem.clientHeight + "px";
+poems.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
+articles.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
+shortStories.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
 
-aboutUs.style.scrollMarginTop = headerElem.clientHeight + "px";
-placeCommission.style.scrollMarginTop = headerElem.clientHeight + "px";
+aboutUs.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
+placeCommission.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
 
 mainElem.style.marginTop = headerElem.clientHeight + "px";
 
