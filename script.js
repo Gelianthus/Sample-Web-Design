@@ -90,11 +90,9 @@ menuButton.addEventListener("click", function() {
     const expanded = headerUL.getAttribute("data-expanded");
     if(expanded === "false") {
         headerUL.setAttribute("data-expanded", "true");
-    } else {
+        menuButton.style.fill = "whitesmoke"
+    } else if(expanded === "true") {
         headerUL.setAttribute("data-expanded", "false");
+        menuButton.style.fill = "hsla(0, 0%, 40%, 1)"
     }
-})
-
-headerUL.addEventListener("mouseleave", function(){
-    headerUL.setAttribute("data-expanded", "false");
 })
