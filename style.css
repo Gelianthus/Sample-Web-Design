@@ -760,4 +760,19 @@ nav > ul {
         vertical-align: middle;
         margin-right: 0.25rem;
     }
+
+    input[type="text"] {
+        width: 50vw;
+    }
+
+    input[type="email"] {
+        width: 50vw;
+    }
+
+    .menu-button {
+        top: var(--size-150);
+        right: var(--size-400); 
+    }
+
+
 }
