@@ -22,6 +22,11 @@ const faqButton = document.getElementById("faqButton");
 const headerUL = document.getElementById("headerUL");
 const menuButton = document.getElementById("menuButton");
 
+const originSection = document.getElementById("origin");
+const goalsSection = document.getElementById("goals");
+const policiesSection = document.getElementById("policies");
+const faqSection = document.getElementById("faq");
+
 // Scripts -------------------------------------------------------------------------------
 
 
@@ -35,6 +40,8 @@ aboutUs.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
 placeCommission.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
 
 mainElem.style.marginTop = headerElem.clientHeight + "px";
+
+subSectionContainer.style.height = originSection.clientHeight + "px";
 
 // Expand Explore Button
 
@@ -54,6 +61,7 @@ projectUL.addEventListener("mouseleave", function() {
 
 originButton.addEventListener("click", function() {
     subSectionContainer.style.transform = "translateX(0%)";
+    subSectionContainer.style.height = originSection.clientHeight + "px";
     originButton.setAttribute("data-active", "true");
     goalsButton.setAttribute("data-active", "false");
     policiesButton.setAttribute("data-active", "false");
@@ -62,6 +70,7 @@ originButton.addEventListener("click", function() {
 
 goalsButton.addEventListener("click", function() {
     subSectionContainer.style.transform = "translateX(-100%)";
+    subSectionContainer.style.height = goalsSection.clientHeight + "px";
     originButton.setAttribute("data-active", "false");
     goalsButton.setAttribute("data-active", "true");
     policiesButton.setAttribute("data-active", "false");
@@ -70,6 +79,7 @@ goalsButton.addEventListener("click", function() {
 
 policiesButton.addEventListener("click", function() {
     subSectionContainer.style.transform = "translateX(-200%)";
+    subSectionContainer.style.height = policiesSection.clientHeight + "px";
     originButton.setAttribute("data-active", "false");
     goalsButton.setAttribute("data-active", "false");
     policiesButton.setAttribute("data-active", "true");
@@ -78,6 +88,7 @@ policiesButton.addEventListener("click", function() {
 
 faqButton.addEventListener("click", function() {
     subSectionContainer.style.transform = "translateX(-300%)";
+    subSectionContainer.style.height = faqSection.clientHeight + "px";
     originButton.setAttribute("data-active", "false");
     goalsButton.setAttribute("data-active", "false");
     policiesButton.setAttribute("data-active", "false");
@@ -94,5 +105,19 @@ menuButton.addEventListener("click", function() {
     } else if(expanded === "true") {
         headerUL.setAttribute("data-expanded", "false");
         menuButton.style.fill = "hsla(0, 0%, 40%, 1)"
+    }
+})
+
+// Window Resize
+
+window.addEventListener("resize", function(){
+    if (originButton.getAttribute("data-active") === "true") {
+        subSectionContainer.style.height = originSection.clientHeight + "px";
+    } else if (goalsButton.getAttribute("data-active") === "true") {
+        subSectionContainer.style.height = goalsSection.clientHeight + "px";
+    } else if (policiesButton.getAttribute("data-active") === "true") {
+        subSectionContainer.style.height = policiesSection.clientHeight + "px";
+    } else if (faqButton.getAttribute("data-active") === "true") {
+        subSectionContainer.style.height = faqSection.clientHeight + "px";
     }
 })
