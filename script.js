@@ -43,6 +43,8 @@ mainElem.style.marginTop = headerElem.clientHeight + "px";
 
 subSectionContainer.style.height = originSection.clientHeight + "px";
 
+subSectionContainer.style.height = originSection.clientHeight + "px";
+
 // Expand Explore Button
 
 exploreProjectButton.addEventListener("click", function(){
