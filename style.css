@@ -271,6 +271,7 @@ header {
 
 .about-us-section {
     margin-bottom: var(--size-1000);
+    height: fit-content;
 }
 
 .section-heading {
