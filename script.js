@@ -120,3 +120,7 @@ window.addEventListener("resize", function(){
         subSectionContainer.style.height = faqSection.clientHeight + "px";
     }
 })
+
+window.addEventListener("load", function {
+    subSectionContainer.style.height = originSection.clientHeight + "px";
+})
