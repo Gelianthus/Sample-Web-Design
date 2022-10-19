@@ -121,6 +121,6 @@ window.addEventListener("resize", function(){
     }
 })
 
-window.addEventListener("load", function {
+window.addEventListener("load", function() {
     subSectionContainer.style.height = originSection.clientHeight + "px";
 })
