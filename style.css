@@ -271,7 +271,6 @@ header {
 
 .about-us-section {
     margin-bottom: var(--size-1000);
-    height: fit-content;
 }
 
 .section-heading {
@@ -289,7 +288,6 @@ header {
     display: flex;
     flex-direction: row;
     transform: translateX(0%);
-    height: fit-content;
 }
 
 .slider-button-container {
@@ -655,6 +653,10 @@ nav > ul {
 }
 
 @media (max-width: 480px) {
+
+    .intro-section {
+        padding: var(--size-200) 0;
+    }
     .social-link {
         font-size: 0;
         font-weight: var(--fw-regular);

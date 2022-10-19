@@ -41,7 +41,6 @@ placeCommission.style.scrollMarginTop = headerElem.clientHeight * 1.2 + "px";
 
 mainElem.style.marginTop = headerElem.clientHeight + "px";
 
-
 // Expand Explore Button
 
 exploreProjectButton.addEventListener("click", function(){
