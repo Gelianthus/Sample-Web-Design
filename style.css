@@ -288,6 +288,7 @@ header {
     display: flex;
     flex-direction: row;
     transform: translateX(0%);
+    height: fit-content;
 }
 
 .slider-button-container {
